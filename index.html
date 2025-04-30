@@ -188,7 +188,9 @@
           <div class="product-card">
             <div class="products-icon">
               <a href="#" @click.prevent="$store.cart.add(item)"><i class="bx bx-cart"></i></a>
-              <a href="#" @click.prevent="$store.product.openModal(item)"><i class="bx bx-detail"></i></a>              
+              <a href="#" @click.prevent="$store.product.openModal(item)"><i class="bx bx-detail"></i></a>           
+              <a :href="`https://wa.me/+6281331061873?text=Halo%20Dikin%20Coffee,%20saya%20ingin%20memesan%20produk%20${encodeURIComponent(item.name)}.%20Apakah%20masih%20tersedia?`" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+
             </div>
             <div class="product-image">
               <img :src="`assets/img/${item.img}`" :alt="item.name" />
